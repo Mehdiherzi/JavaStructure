@@ -37,9 +37,9 @@ public class Conteneur {
         }
          
           
-          public void tail()
+          public void tail( int taille )
           {
-          
+          this.taille = taille; 
           
           }
           public  Conteneur  mettre(Conteneur a,int taille,int i)
