@@ -18,7 +18,9 @@ public class Conteneur {
         private int   taille; 
         private int  emplacement;
         
-        public Conteneur coffre[];    
+        public Conteneur coffre[];     
+
+        public Conteneur alphacube [][][]; 
         
         
         public Conteneur(float largueur ,float longueur,float profondeur ,int emplacement ){
@@ -27,11 +29,12 @@ public class Conteneur {
          this.longueur= longueur; 
          this.profondeur = profondeur;
          
-         this.emplacement = emplacement;
+         Ville v   = new  Ville();
          
-        
          
-     
+         Conteneur a[] = new [] Conteneur; 
+    
+             this.emplacement = emplacement;
         }
         
         
@@ -39,9 +42,7 @@ public class Conteneur {
         {
             String a= " largueur " + largueur+ " longueur "+longueur+" profondeur "+ profondeur + " emplacement "+ emplacement ;
            return a;
-        }
-         
-          
+        }    
           public void tail(int taille)
           {
           this.taille = taille; 
@@ -50,11 +51,10 @@ public class Conteneur {
           
           
           
-          public  void mettre(Conteneur a,int i)
+          public  void mettre(Conteneur a,int l)
           {  
-                  
-                
-                this.coffre[i]=a;
+                        
+                this.coffre[l]=a;
               
           }
           
@@ -71,5 +71,12 @@ public class Conteneur {
         {
             return this.largueur*this.longueur;
         }
+    public float volume ()
+    {
+
+        return this.profondeur*this.largueur*this.longueur;
+        
+    }
+
     
 }
