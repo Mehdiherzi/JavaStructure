@@ -26,7 +26,7 @@ public class Conteneur {
          this.longueur= longueur; 
          this.profondeur = profondeur;
          
-       kdl
+     
         }
         
         
