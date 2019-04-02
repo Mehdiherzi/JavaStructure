@@ -23,14 +23,18 @@ public class JavaApplication7 {
         a= new Ville();
       
         Conteneur voiture = new Conteneur(0,0,0);
-                Conteneur bloc = new Conteneur(2,0,0);
+        Conteneur bloc = new Conteneur(2,0,0);
         
           
         
-       voiture.mettre(bloc,10,0); 
+         voiture.tail(12);
+         
+          voiture.mettre(bloc,1);
         
+          
+          
   
-            System.out.println(voiture.coffre[0].toString());
+            System.out.println(voiture.voirlecoffre()[1].toString());
             
         
  
