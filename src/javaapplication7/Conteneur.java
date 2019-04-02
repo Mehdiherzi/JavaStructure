@@ -16,16 +16,18 @@ public class Conteneur {
         private float longueur;
         private float profondeur;
         private int   taille; 
-        private int  emplacement
+        private int  emplacement;
         
         public Conteneur coffre[];    
         
         
-        public Conteneur(float largueur ,float longueur,float profondeur ){
-          float a = 0f;
+        public Conteneur(float largueur ,float longueur,float profondeur ,int emplacement ){
+          
          this.largueur = largueur;  
          this.longueur= longueur; 
          this.profondeur = profondeur;
+         
+         this.emplacement = emplacement;
          
         
          

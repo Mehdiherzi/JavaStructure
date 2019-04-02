@@ -22,20 +22,32 @@ public class JavaApplication7 {
         Ville a;
         a= new Ville();
       
-        Conteneur voiture = new Conteneur(0,0,0);
-        Conteneur bloc = new Conteneur(2,0,0);
+        Conteneur voiture = new Conteneur(100,100,100,1);
         
+        int i;
+   
           
         
          voiture.tail(12);
          
-          voiture.mettre(bloc,1);
-        
-          
-          
-  
-            System.out.println(voiture.voirlecoffre()[1].toString());
+              for ( i = 0; i < voitu; i++) {
             
+        Conteneur  alpha= new Conteneur(4,4,4,i);
+          voiture.mettre(alpha,i); 
+        }
+       
+         // voiture.mettre(bloc,1);
+        
+          i=0;
+          
+        do {
+        
+            System.out.println(voiture.voirlecoffre()[i].toString());
+            
+            i++;
+        } while (i< 9);
+        
+
         
  
         
