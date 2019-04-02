@@ -37,7 +37,7 @@ public class Conteneur {
         
           public   String  toString()
         {
-            String a= " largueur " + largueur+ " longueur "+longueur+" profondeur "+ profondeur;
+            String a= " largueur " + largueur+ " longueur "+longueur+" profondeur "+ profondeur + " emplacement "+ emplacement ;
            return a;
         }
          

@@ -22,30 +22,40 @@ public class JavaApplication7 {
         Ville a;
         a= new Ville();
       
+         
         Conteneur voiture = new Conteneur(100,100,100,1);
-        
+         voiture.tail(12);
         int i;
    
           
         
-         voiture.tail(12);
-         
-              for ( i = 0; i < voitu; i++) {
-            
+        
+              for ( i = 0; i < voiture.coffre.length; i++) {
+               
         Conteneur  alpha= new Conteneur(4,4,4,i);
-          voiture.mettre(alpha,i); 
+              if (i==2) {
+                    voiture.mettre(null,i);  
+                  }
+              else
+              voiture.mettre(alpha,i); 
+              
         }
-       
-         // voiture.mettre(bloc,1);
+
         
           i=0;
           
         do {
-        
-            System.out.println(voiture.voirlecoffre()[i].toString());
+            if (voiture.voirlecoffre()[i]==null ) {
+                
+                System.out.println("emplacement "+i+ " vide" );
+            }
+            else{
+                System.out.println(voiture.voirlecoffre()[i].toString());
+            }
+            
             
             i++;
-        } while (i< 9);
+        } while (i< voiture.coffre.length);
         
 
         
