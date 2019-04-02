@@ -16,8 +16,9 @@ public class Conteneur {
         private float longueur;
         private float profondeur;
         private int   taille; 
+        private int  emplacement
         
-        public Conteneur coffre [] = new  Conteneur[taille];     
+        public Conteneur coffre[];    
         
         
         public Conteneur(float largueur ,float longueur,float profondeur ){
@@ -25,6 +26,8 @@ public class Conteneur {
          this.largueur = largueur;  
          this.longueur= longueur; 
          this.profondeur = profondeur;
+         
+        
          
      
         }
@@ -37,20 +40,26 @@ public class Conteneur {
         }
          
           
-          public void tail( int taille )
+          public void tail(int taille)
           {
           this.taille = taille; 
-          
+           this.coffre = new  Conteneur[this.taille]; 
           }
-          public  Conteneur  mettre(Conteneur a,int taille,int i)
+          
+          
+          
+          public  void mettre(Conteneur a,int i)
           {  
+                  
+                
+                this.coffre[i]=a;
               
+          }
+          
+          public Conteneur [] voirlecoffre()
+          {
               
-             
-                   this.coffre[i] = a;
-             
-            return this.coffre[i]; 
-           
+              return this.coffre;
           }
     
     
