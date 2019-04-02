@@ -16,16 +16,20 @@ public class JavaApplication7 {
      */
    
 
-
+    //  fonction static main ou point d'enntré 
     public static void main(String[] args) {
-       
+     /*
         Ville a;
         a= new Ville();
-      
+     */  
          
+     
+
+        //  class conteneur  qui est une  voiture 
+        //  la voikture fait de  100 de largeur  100 de longueur  100 profondeur 
         Conteneur voiture = new Conteneur(100,100,100,1);
-         voiture.tail(12);
-        int i;
+         voiture.tail(12);  //  taille possible pour une voiture 
+        int i ; // crétion de la variable  i qui indente  le  coffre de la  voiture 
    
           
         
@@ -33,7 +37,7 @@ public class JavaApplication7 {
               for ( i = 0; i < voiture.coffre.length; i++) {
                
         Conteneur  alpha= new Conteneur(4,4,4,i);
-              if (i==2) {
+              if (i==3) {
                     voiture.mettre(null,i);  
                   }
               else
