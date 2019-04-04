@@ -5,6 +5,10 @@
  */
 package javaapplication7;
 
+import java.util.Date;
+
+import javafx.scene.chart.PieChart.Data;
+
 /**
  *
  * @author Ordi
@@ -20,8 +24,9 @@ public class Conteneur {
         
         public Conteneur coffre[];     
 
-        public Conteneur alphacube [][][]; 
-        
+        public Conteneur alphacube [][][][][]; 
+
+           
         
         public Conteneur(float largueur ,float longueur,float profondeur ,int emplacement ){
           
@@ -31,11 +36,25 @@ public class Conteneur {
          
          Ville v   = new  Ville();
          
-         
+         Date = new Date();
          Conteneur a[] = new Conteneur[this.taille] ; 
     
              this.emplacement = emplacement;
         }
+        public Conteneur(){
+          
+            this.largueur =  0;  
+            this.longueur= 0 ; 
+            this.profondeur =  0;
+            
+             
+            
+            
+             this.coffre = new Conteneur[this.taille] ;
+             this.alphacube =new Conteneur [this.largueur][this.longueur][this.profondeur][this.emplacement][];    
+         
+                this.emplacement = emplacement;
+           }
         
         
           public   String  toString()
