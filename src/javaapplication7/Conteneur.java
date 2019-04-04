@@ -32,7 +32,7 @@ public class Conteneur {
          Ville v   = new  Ville();
          
          
-         Conteneur a[] = new [] Conteneur; 
+         Conteneur a[] = new Conteneur[this.taille] ; 
     
              this.emplacement = emplacement;
         }
