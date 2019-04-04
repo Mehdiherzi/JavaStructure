@@ -4,21 +4,27 @@
 
 package javaapplication7;
 
-import java.util.HashMap;
+import java.util.*;
 
-java.util.*;
+
+
 
 
 public class vehicule {
 
-  
+    public String proprietere;
+
+    public String  carburant;
+
     private HashMap  Conteneur ;
+
+    private double  coordonnee = x,y;  
 
 
    public vehicule(int roue ){
        
    this.Conteneur = new HashMap<Integer,Conteneur>();
-   this.roue = roue;
+   
 
    }
    public vehicule(vehicule v)
@@ -46,10 +52,10 @@ public class vehicule {
    return this.largueur;
    }
    
-   public void  sorti()
+   public Position()
    {
-   
+     this.x= x;
+     this.y= y; 
    }
-
 
 };
