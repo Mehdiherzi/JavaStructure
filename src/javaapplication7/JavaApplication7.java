@@ -24,7 +24,7 @@ public class JavaApplication7 {
      */  
          
      
-
+/*
         //  class conteneur  qui est une  voiture 
         //  la voikture fait de  100 de largeur  100 de longueur  100 profondeur 
         Conteneur voiture = new Conteneur(100,100,100,1);
@@ -62,8 +62,15 @@ public class JavaApplication7 {
         } while (i< voiture.coffre.length);
         
 
-        
+        */
  
+        
+        
+       test a = new test(1.2f);
+        
+        System.out.println(a.toString());
+        
+        
         
         
         
